@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yassmeen Eletreby | AI & Data Portfolio</title>
+<meta name="description" content="Yassmeen Eletreby — Artificial Intelligence student focused on Machine Learning and Data Analysis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7fbff;--surface:#fff;--surface2:#eef6ff;--text:#0d2b55;--muted:#56708f;--line:#dbe9f7;--blue:#1769d2;--blue2:#42a5f5;--shadow:0 18px 55px rgba(24,76,130,.12);--max:1180px}
+*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}
+.wrap{width:min(92%,var(--max));margin:auto}nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.86);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font:700 22px "Space Grotesk"}.logo span{color:var(--blue)}
+.links{display:flex;gap:25px;color:#34577e;font-size:14px;font-weight:600}.links a{position:relative}.links a:hover{color:var(--blue)}.menu{display:none;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:8px 11px;font-size:18px}
+.hero{padding:125px 0 70px;background:linear-gradient(135deg,#f8fcff 0%,#edf6ff 55%,#fff 100%);overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:60px;align-items:center}.badge{display:inline-flex;padding:8px 14px;border-radius:99px;background:#e0efff;color:#1257a9;border:1px solid #cbe2fb;font-size:13px;font-weight:700}
+h1{font:800 clamp(45px,6vw,78px)/1 "Space Grotesk";letter-spacing:-3px;margin:20px 0}.gradient{background:linear-gradient(90deg,#123f77,#1769d2,#42a5f5);-webkit-background-clip:text;color:transparent}.hero p{font-size:18px;color:var(--muted);max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:27px 0}.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:12px;border:1px solid #cfe0f2;font-weight:700;font-size:14px;transition:.25s;cursor:pointer;background:#fff}.btn.primary{background:linear-gradient(110deg,#1769d2,#3289e8);color:#fff;border:0;box-shadow:0 12px 28px rgba(23,105,210,.22)}.btn:hover{transform:translateY(-3px)}
+.contact-mini{display:flex;flex-wrap:wrap;gap:15px;color:#365b82;font-size:13px;font-weight:600}.contact-mini span{display:inline-flex;align-items:center;gap:6px}
+.photo-card{position:relative}.photo-wrap{width:min(100%,470px);margin-left:auto;border-radius:30px;overflow:hidden;border:8px solid #fff;box-shadow:var(--shadow);background:#dcecff}.photo-wrap img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}.float-note{position:absolute;right:-10px;bottom:20px;background:#fff;border:1px solid var(--line);padding:13px 17px;border-radius:16px;box-shadow:var(--shadow);font-weight:800;color:var(--blue);transform:rotate(-3deg)}
+section{padding:90px 0}.section-head{margin-bottom:30px}.kicker{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--blue);font-weight:800}.section-head h2{font:700 38px "Space Grotesk";margin:7px 0}.section-head p{color:var(--muted);max-width:680px}
+.about-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:20px}.panel,.fact,.skill{background:var(--surface);border:1px solid var(--line);border-radius:20px;box-shadow:0 8px 30px rgba(25,78,130,.06)}.panel{padding:28px}.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px}.fact{padding:20px}.fact strong{display:block;font-size:15px;margin-bottom:5px}.fact span{color:var(--muted);font-size:13px}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.skill{padding:20px;transition:.25s}.skill:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.skill .icon{font-size:24px}.skill h3{margin:8px 0 2px;font-size:16px}.skill p{margin:0;color:var(--muted);font-size:13px}
+.filterbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}.filter{border:1px solid var(--line);background:#fff;color:#456584;padding:8px 13px;border-radius:99px;font-weight:700;cursor:pointer}.filter.active,.filter:hover{background:#1769d2;color:#fff;border-color:#1769d2}
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:20px}.project{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 8px 30px rgba(25,78,130,.06);transition:.3s}.project:hover{transform:translateY(-6px);box-shadow:var(--shadow)}.project.hidden{display:none}.project img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover}.project-body{padding:22px}.project-title{display:flex;justify-content:space-between;gap:10px;align-items:start}.project h3{margin:0;font:700 22px "Space Grotesk"}.type{font-size:11px;padding:5px 9px;border-radius:99px;background:#e8f3ff;color:#1769d2;font-weight:800;white-space:nowrap}.project p{color:var(--muted);font-size:14px}.tags{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0}.tag{font-size:11px;padding:5px 9px;border-radius:99px;background:#f0f6fc;color:#41627f}.project-actions{display:flex;gap:10px;flex-wrap:wrap}.small-btn{font-size:13px;color:#1769d2;font-weight:800;border:0;background:none;cursor:pointer;padding:0}
+.process{background:#edf6ff}.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}.step{padding:20px;border:1px solid #d4e7fa;border-radius:18px;background:#fff}.num{width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:#1769d2;color:#fff;font-weight:800}.step h3{font-size:15px;margin:12px 0 4px}.step p{font-size:13px;color:var(--muted);margin:0}
+.education{display:grid;grid-template-columns:1fr 1fr;gap:20px}.edu{padding:23px}.edu small{color:var(--blue);font-weight:800}.edu h3{margin:7px 0}.edu p{margin:0;color:var(--muted)}
+.contact-box{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:30px;border-radius:24px;background:linear-gradient(120deg,#0e3f77,#1769d2);color:#fff;box-shadow:var(--shadow)}.contact-box p{color:#dbeeff}.contact-box .btn{color:var(--text)}
+footer{padding:25px 0;border-top:1px solid var(--line);color:#6d849d;font-size:13px;display:flex;justify-content:space-between;gap:15px}
+.reveal{opacity:0;transform:translateY(20px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
+.modal{position:fixed;inset:0;background:rgba(5,27,53,.58);display:none;align-items:center;justify-content:center;padding:20px;z-index:100}.modal.open{display:flex}.modal-card{max-width:620px;width:100%;background:#fff;border-radius:24px;padding:28px;box-shadow:0 30px 90px rgba(0,0,0,.25);position:relative}.close{position:absolute;right:18px;top:15px;border:0;background:#edf5fd;border-radius:50%;width:35px;height:35px;cursor:pointer;font-size:18px;color:#174a7d}.modal-card h3{font:700 28px "Space Grotesk";margin-top:0}.modal-card p{color:var(--muted)}
+@media(max-width:900px){.links{display:none}.links.open{display:flex;position:absolute;top:72px;left:0;right:0;background:#fff;padding:18px 4%;flex-direction:column;border-bottom:1px solid var(--line)}.menu{display:block}.hero-grid,.about-grid,.education{grid-template-columns:1fr}.photo-wrap{margin:auto}.skills{grid-template-columns:1fr 1fr}.projects{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.contact-box{flex-direction:column;align-items:flex-start}}
+@media(max-width:520px){.skills,.facts,.steps{grid-template-columns:1fr}h1{letter-spacing:-2px;font-size:48px}.contact-mini{flex-direction:column;gap:7px}.float-note{right:4px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav"><a class="logo" href="#home">Yassmeen<span>.</span></a><div class="links" id="navLinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#process">Process</a><a href="#contact">Contact</a></div><button class="menu" aria-label="Open menu" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button></div></nav>
+
+<main id="home">
+<section class="hero"><div class="wrap hero-grid">
+<div class="reveal"><div class="badge">AI Student · Machine Learning · Data Analysis</div>
+<h1>Turning data into <span class="gradient">useful ideas.</span></h1>
+<p>I’m Yassmeen Eletreby, an Artificial Intelligence student at Kafr El-Sheikh University. I enjoy analyzing data, building machine learning solutions, and learning by creating practical projects.</p>
+<div class="actions"><a class="btn primary" href="#projects">View My Projects ↗</a><a class="btn" href="mailto:yasmynaltrby@gmail.com">Get In Touch</a></div>
+<div class="contact-mini"><span>📞 <a href="tel:01011800261">01011800261</a></span><span>✉️ <a href="mailto:yasmynaltrby@gmail.com">yasmynaltrby@gmail.com</a></span><span>🔗 <a href="https://www.linkedin.com/in/yassmeen-eletreby-5b480839b/" target="_blank">LinkedIn</a></span></div></div>
+<div class="photo-card reveal"><div class="photo-wrap"><img src="assets/yassmeen.jpg" alt="Yassmeen Eletreby"></div><div class="float-note">Better Data<br>Better Decisions ✦</div></div>
+</div></section>
+
+<section id="about"><div class="wrap"><div class="section-head reveal"><span class="kicker">01 / About</span><h2>A little about me</h2><p>My focus is learning through real projects and turning technical skills into clear, practical results.</p></div>
+<div class="about-grid"><div class="panel reveal"><p>I am an Artificial Intelligence student at Kafr El-Sheikh University, expected to graduate in 2028. I’m interested in Machine Learning and Data Analysis, and I enjoy exploring datasets, finding patterns, and building models that can support decisions.</p><p style="color:var(--muted)">I’m also developing my software skills through Flutter and keeping a strong interest in robotics and practical applications.</p></div>
+<div class="facts reveal"><div class="fact"><strong>🎓 Education</strong><span>Artificial Intelligence</span></div><div class="fact"><strong>📅 Graduation</strong><span>Expected 2028</span></div><div class="fact"><strong>🧠 Main Focus</strong><span>ML & Data Analysis</span></div><div class="fact"><strong>🚀 Goal</strong><span>Freelance & Internship opportunities</span></div></div></div></div></section>
+
+<section id="skills"><div class="wrap"><div class="section-head reveal"><span class="kicker">02 / Skills</span><h2>Tools I work with</h2></div>
+<div class="skills">
+<div class="skill reveal"><div class="icon">🐍</div><h3>Python</h3><p>Programming & data work</p></div><div class="skill reveal"><div class="icon">📊</div><h3>Pandas / NumPy</h3><p>Data cleaning & analysis</p></div><div class="skill reveal"><div class="icon">🤖</div><h3>Machine Learning</h3><p>Model building & evaluation</p></div><div class="skill reveal"><div class="icon">📈</div><h3>Visualization</h3><p>Charts & insights</p></div>
+<div class="skill reveal"><div class="icon">🗄️</div><h3>SQL</h3><p>Queries & databases</p></div><div class="skill reveal"><div class="icon">⚙️</div><h3>C++</h3><p>Logic & robotics</p></div><div class="skill reveal"><div class="icon">📱</div><h3>Flutter / Dart</h3><p>Cross-platform apps</p></div><div class="skill reveal"><div class="icon">🔧</div><h3>Git & GitHub</h3><p>Version control</p></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap"><div class="section-head reveal"><span class="kicker">03 / Projects</span><h2>Featured projects</h2><p>Explore my work in data analysis, machine learning, and robotics.</p></div>
+<div class="filterbar reveal"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="data">Data Analysis</button><button class="filter" data-filter="ml">Machine Learning</button><button class="filter" data-filter="robotics">Robotics</button></div>
+<div class="projects">
+<article class="project reveal" data-category="robotics"><img src="assets/robotic-arm.svg" alt="Robotic Arm project"><div class="project-body"><div class="project-title"><h3>Robotic Arm</h3><span class="type">Robotics</span></div><p>Practical robotics work using servo motors and color detection to automate a simple pick-and-place idea.</p><div class="tags"><span class="tag">Arduino</span><span class="tag">Python</span><span class="tag">Robotics</span></div><div class="project-actions"><button class="small-btn details" data-title="Robotic Arm" data-text="A practical robotics project focused on servo control and color-based interaction.">View details →</button><a class="small-btn" href="https://github.com/yassmeeneletreby" target="_blank">GitHub ↗</a></div></div></article>
+<article class="project reveal" data-category="data"><img src="assets/used-cars.svg" alt="Used Cars Data Analysis project"><div class="project-body"><div class="project-title"><h3>Used Cars Data Analysis</h3><span class="type">Data Analysis</span></div><p>Analyzed 6,019 used-car records through cleaning, EDA, statistical analysis, encoding, and derived features.</p><div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Visualization</span></div><div class="project-actions"><button class="small-btn details" data-title="Used Cars Data Analysis" data-text="The project explores used-car characteristics and price patterns. It includes data preparation, EDA, missing-value handling, categorical encoding, and derived groups such as Price_Level and Age_Group.">View details →</button><a class="small-btn" href="https://github.com/yassmeeneletreby" target="_blank">GitHub ↗</a></div></div></article>
+<article class="project reveal" data-category="ml"><img src="assets/heart-disease.svg" alt="Heart Disease Prediction project"><div class="project-body"><div class="project-title"><h3>Heart Disease Prediction</h3><span class="type">Machine Learning</span></div><p>Explored the Cleveland UCI heart-disease dataset and worked with preprocessing, EDA, Logistic Regression, and SVM.</p><div class="tags"><span class="tag">Python</span><span class="tag">EDA</span><span class="tag">Logistic Regression</span><span class="tag">SVM</span></div><div class="project-actions"><button class="small-btn details" data-title="Heart Disease Prediction" data-text="The project uses the Cleveland UCI dataset. My contribution focused on EDA: dataset structure, descriptive statistics, missing values, distributions, correlations, and target distribution. The wider project uses Logistic Regression and SVM.">View details →</button><a class="small-btn" href="https://github.com/yassmeeneletreby" target="_blank">GitHub ↗</a></div></div></article>
+<article class="project reveal" data-category="robotics"><img src="assets/line-follower.svg" alt="Line Follower Robot project"><div class="project-body"><div class="project-title"><h3>Line Follower Robot</h3><span class="type">Robotics</span></div><p>An Arduino project using sensors and motor control to make a robot follow a defined path.</p><div class="tags"><span class="tag">Arduino</span><span class="tag">C++</span><span class="tag">IR Sensors</span></div><div class="project-actions"><button class="small-btn details" data-title="Line Follower Robot" data-text="A hands-on Arduino robotics project using IR sensors to detect a line and motor control to adjust movement.">View details →</button><a class="small-btn" href="https://github.com/yassmeeneletreby" target="_blank">GitHub ↗</a></div></div></article>
+</div></div></section>
+
+<section id="process" class="process"><div class="wrap"><div class="section-head reveal"><span class="kicker">04 / Process</span><h2>How I approach a data problem</h2></div><div class="steps">
+<div class="step reveal"><div class="num">1</div><h3>Data Exploration</h3><p>Understand the data and find initial patterns.</p></div><div class="step reveal"><div class="num">2</div><h3>Data Cleaning</h3><p>Handle missing values and inconsistencies.</p></div><div class="step reveal"><div class="num">3</div><h3>Modeling</h3><p>Build and tune models when needed.</p></div><div class="step reveal"><div class="num">4</div><h3>Evaluation</h3><p>Measure performance with suitable metrics.</p></div><div class="step reveal"><div class="num">5</div><h3>Insights</h3><p>Turn results into clear recommendations.</p></div>
+</div></div></section>
+
+<section id="education"><div class="wrap"><div class="section-head reveal"><span class="kicker">05 / Journey</span><h2>Education & learning</h2></div><div class="education">
+<div class="panel edu reveal"><small>2024 — 2028</small><h3>Kafr El-Sheikh University</h3><p>Faculty of Artificial Intelligence · Artificial Intelligence</p></div>
+<div class="panel edu reveal"><small>Learning Path</small><h3>Machine Learning</h3><p>Building skills in Python, data analysis, preprocessing, modeling, and evaluation.</p></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap"><div class="contact-box reveal"><div><span class="kicker" style="color:#bfe1ff">06 / Contact</span><h2 style="font:700 34px 'Space Grotesk';margin:7px 0">Let’s build something useful.</h2><p>Available for internships, freelance data-analysis work, and opportunities to learn and contribute.</p></div><div class="actions" style="margin:0"><a class="btn" href="mailto:yasmynaltrby@gmail.com">Email Me</a><a class="btn" href="https://www.linkedin.com/in/yassmeen-eletreby-5b480839b/" target="_blank">LinkedIn ↗</a></div></div></div></section>
+</main>
+
+<footer><div class="wrap" style="display:flex;justify-content:space-between;gap:15px"><span>© 2026 Yassmeen Eletreby</span><span>AI · Data · Curiosity</span></div></footer>
+
+<div class="modal" id="modal"><div class="modal-card"><button class="close" id="closeModal">×</button><h3 id="modalTitle"></h3><p id="modalText"></p><a class="btn primary" href="https://github.com/yassmeeneletreby" target="_blank">Open GitHub ↗</a></div></div>
+
+<script>
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+document.querySelectorAll('.filter').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active')); btn.classList.add('active');
+    const f=btn.dataset.filter;
+    document.querySelectorAll('.project').forEach(card=>card.classList.toggle('hidden',f!=='all'&&card.dataset.category!==f));
+  });
+});
+
+const modal=document.getElementById('modal'), title=document.getElementById('modalTitle'), text=document.getElementById('modalText');
+document.querySelectorAll('.details').forEach(btn=>btn.addEventListener('click',()=>{
+  title.textContent=btn.dataset.title; text.textContent=btn.dataset.text; modal.classList.add('open');
+}));
+document.getElementById('closeModal').onclick=()=>modal.classList.remove('open');
+modal.addEventListener('click',e=>{if(e.target===modal)modal.classList.remove('open')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')modal.classList.remove('open')});
+document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open')));
+</script>
+</body>
+</html>

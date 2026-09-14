@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#0d47a1"/><stop offset="1" stop-color="#42a5f5"/></linearGradient></defs>
+<rect width="900" height="560" rx="28" fill="#071426"/><circle cx="760" cy="90" r="180" fill="#0d47a1" opacity=".25"/>
+<text x="55" y="72" fill="#fff" font-family="Arial" font-size="34" font-weight="700">Used Cars Market Analysis</text>
+<text x="55" y="108" fill="#9ec9ff" font-family="Arial" font-size="18">Data cleaning • EDA • Statistics</text>
+<rect x="55" y="145" width="790" height="350" rx="22" fill="#0b2038" stroke="#24517e"/>
+<rect x="95" y="190" width="350" height="230" rx="14" fill="#102c49"/>
+<line x1="125" y1="380" x2="410" y2="380" stroke="#6b8aaa" stroke-width="2"/>
+<rect x="135" y="315" width="35" height="65" fill="#42a5f5"/><rect x="195" y="280" width="35" height="100" fill="#42a5f5"/><rect x="255" y="250" width="35" height="130" fill="#42a5f5"/><rect x="315" y="215" width="35" height="165" fill="#64b5f6"/><rect x="375" y="295" width="35" height="85" fill="#90caf9"/>
+<text x="115" y="225" fill="#d9ecff" font-family="Arial" font-size="20" font-weight="700">Price Distribution</text>
+<circle cx="650" cy="305" r="88" fill="none" stroke="#21496f" stroke-width="30"/><path d="M650 217 A88 88 0 0 1 729 344" fill="none" stroke="#42a5f5" stroke-width="30"/>
+<text x="615" y="311" fill="#fff" font-family="Arial" font-size="28" font-weight="700">6,019</text><text x="585" y="342" fill="#9ec9ff" font-family="Arial" font-size="16">records</text>
+<text x="505" y="405" fill="#fff" font-family="Arial" font-size="18">Price insights</text><text x="505" y="435" fill="#9ec9ff" font-family="Arial" font-size="15">Median 5.64 • Q1 3.50 • Q3 9.95</text>
+</svg>
